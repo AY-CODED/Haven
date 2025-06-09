@@ -1,0 +1,107 @@
+:root {
+  --color1: #9966cce1;
+  --overlayColor: #9966ccd1;
+  --txtColor: white;
+  --font1: "Cinzel", serif;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: var(--font1) !important;
+}
+
+#navBar {
+  background-color: var(--color1) !important;
+}
+
+a{
+  color: var(--color1);
+}
+.containers {
+  position: relative;
+  width: 100%;
+  height: 28rem;
+  overflow: hidden;
+}
+
+#heroTxt {
+  position: absolute;
+  color: white;
+  padding: 2rem;
+  margin-top: -80px;
+}
+
+
+.containerImg img {
+  width: 100%;
+  height: 67vh;
+  position: absolute;
+}
+
+#containerOverlay {
+  background-color: var(--overlayColor);
+  width: 100%;
+  height: 67vh;
+  position: relative;
+  top: auto;
+}
+
+@media (max-width: 772px) {
+  #heroImg {
+    position: relative;
+  }
+
+  #heroTxt {
+    width: 35rem;
+    position: absolute;
+    margin-top: -18rem;
+    margin-left: 5px;
+  }
+
+  #heroTxt h2 {
+    text-shadow: 1px black;
+  }
+  .containerImg img {
+    width: 100%;
+    height: 155vh;
+  }
+
+  #containerOverlay {
+    background-color: var(--overlayColor);
+    width: 100%;
+    height: 155vh;
+    top: auto;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+
+.containers {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 28rem;
+  overflow: hidden;
+}
+
+#heroTxt {
+  max-width: 90%;
+  width: 100%;
+  margin-top: -190px;
+}
+
+@media (max-width: 768px) {
+  #heroTxt h2 {
+    font-size: 1.5rem;
+  }
+
+  #heroTxt p {
+    font-size: 1rem;
+  }
+
+  .containers {
+    max-height: none;
+  }
+}
+
