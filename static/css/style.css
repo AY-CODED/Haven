@@ -105,3 +105,15 @@ a{
   }
 }
 
+footer{
+  background-color: var(--color1) !important;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ffc107;
+}
+
+.carousel-item img{
+  height: 50vh;
+}
